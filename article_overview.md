@@ -190,3 +190,83 @@ student_crud_project/
 ## Conclusion
 
 By mastering these core Python tools and concepts within a practical CRUD system, you'll gain not just theoretical knowledge but also real-world coding skills. The combination of Console App and FastAPI gives you both local and remote interfaces for learning development end-to-end.
+
+## Section-Wise Interview Questions
+### 1. Decorators
+```
+- What is a decorator in Python? How does it work?
+
+- How are decorators useful in API development?
+
+- Can you write a decorator that checks if a user is logged in?
+
+- What are the drawbacks of using multiple decorators on a single function?
+
+- What is the difference between function decorators and class decorators?
+```
+
+
+### 2. Generators
+```
+- What is the difference between a generator and a normal function?
+
+- Why are generators memory-efficient?
+
+- Can you give a use case where a generator would be better than a list?
+
+- What happens if you try to iterate over a generator twice?
+
+- Explain the difference between yield and return.
+```
+
+### 3. Lambda Functions
+```
+- What are lambda functions? When would you use one?
+
+- How is lambda different from a regular function (def)?
+
+- Can you give examples of using lambda with map(), filter(), and sorted()?
+
+- Why are lambda functions limited in their scope (e.g., no assignment statements)?
+
+- Are lambda functions object-oriented or functional in nature?
+```
+
+### 4. Dictionaries & Lists
+```
+- What’s the time complexity of searching in a list vs a dictionary?
+
+- How do you handle duplicates in a list of dictionaries?
+
+- How do you sort a list of dictionaries by a key (e.g., student name)?
+
+- What are the methods used to manipulate lists and dictionaries?
+
+- How do you merge two dictionaries in Python 3.9+?
+```
+
+### 5. CRUD Operations in CLI/API
+```
+- What is CRUD and why is it important?
+
+- How would you implement CRUD using a list of dictionaries?
+
+- How is the POST method different from PUT in FastAPI?
+
+- How do you handle data validation in FastAPI?
+
+- How would you test your FastAPI endpoints using Postman?
+```
+
+### 6. FastAPI Specific
+```
+- What are the benefits of FastAPI over Flask or Django?
+
+- How does FastAPI handle type validation?
+
+- How do you write custom exception handlers in FastAPI?
+
+- What is the role of Pydantic models in FastAPI?
+
+- How do you use dependency injection in FastAPI?
+```
