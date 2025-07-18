@@ -20,7 +20,7 @@ This masterclass strengthens your foundation in Python’s key features—Decora
 ## Section 1: Decorators
 
 ### What Is It?
-Decorators wrap around a function to add extra behavior without modifying the function's code.
+A decorator is a function in python that allows us to add extra functionality like logging, access control to another function without changing its original code. We can you this “@” symbol to apply a decorator to a function.
 
 ### Where to Use
 - Logging
@@ -48,7 +48,10 @@ def create():
 ## Section 2: Generators
 
 ### What Is It?
-Generators use `yield` to return items one at a time, ideal for large datasets or streaming.
+- A generator is a function in python that returns value one by one using the “yield” keyword instead of return.
+- Yield is pause and resume the activity
+- It doesn’t store all values in memory so its memory efficient and useful for large data.
+
 
 ### Where to Use
 - Reading large files
@@ -74,7 +77,7 @@ for s in get_students():
 ## Section 3: Lambda Functions
 
 ### What Is It?
-One-liner anonymous functions for small operations, often used with `map`, `filter`, `sorted`.
+A lambda is an anonymous function in python used to write small, one-line functions without defining them using def. It can take any number of arguments but can have only one expression.
 
 ### Where to Use
 - Sorting/filtering on-the-fly
@@ -94,8 +97,14 @@ search = list(filter(lambda s: "tejas" in s["name"].lower(), students))
 ## Section 4: Dictionaries and Lists
 
 ### What Are They?
-- **List**: Ordered collection, used for student record list.
-- **Dict**: Key-value structure, used per student.
+- **List**:
+``` 
+A list in Python is an ordered collection used to store multiple items in a single variable. It is written using square brackets [] and can hold elements of any data type.
+```
+- **Dict**: 
+```
+A dictionary in Python is a collection of key-value pairs. It is unordered mutable, and does not allow duplicate keys. It is defined using curly braces {} with keys and values separated by a colon.
+```
 
 ### Where to Use
 - In-memory DB simulations
