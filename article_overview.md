@@ -158,7 +158,7 @@ Used to remove data from the database.
 
 ## Process Flow Diagram
 
-```mermaid
+```
 flowchart TD
   1. Start
   2. User chooses Console Mode or API Mode
