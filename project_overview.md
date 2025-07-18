@@ -1,11 +1,8 @@
-# Decorators, Generators, Lambda, Dict, List - CRUD Console App and API
-# Student Management System - Console + API (CRUD)
+# Masterclass: Understnd Decorators, Generators, Lambda, Dict, List - CRUD Console App and API
 
-## Project Overview
+## Overview
 
-- This project is a Student Management System with both Console and API interfaces.
-- It performs CRUD operations using Python features like Decorators, Generators, Lambda, Dict, and List.
-- The system is lightweight, easy to use.
+- This masterclass is designed to help you build a strong foundation in Python's powerful core concepts — Decorators, Generators, Lambda functions, Dictionary, and List by applying them in real-world CRUD applications (Console & FastAPI based). You’ll not only understand theory but also build a full CRUD project in both CLI and API format using these concepts.
 
 
 ## Client Requirements
@@ -33,16 +30,17 @@
 
 ## Decorators:
 A decorator is a function in python that allows us to add extra functionality like logging, access control to another function without changing its original code. We can you this “@” symbol to apply a decorator to a function.
-Example:
-def log(func):
-    def wrapper(*args, **kwargs):
-        print(f"Running: {func.__name__}")
-        return func(*args, **kwargs)
-    return wrapper
-@log
-def create():
-    print("Student created")
-create()
+
+### Example:
+    def log(func):
+        def wrapper(*args, **kwargs):
+            print(f"Running: {func.__name__}")
+            return func(*args, **kwargs)
+        return wrapper
+    @log
+    def create():
+        print("Student created")
+    create()
 
 ---
 
@@ -50,33 +48,36 @@ create()
 A generator is a function in python that returns value one by one using the “yield” keyword instead of return.
 Yield is pause and resume the activity
 It doesn’t store all values in memory so its memory efficient and useful for large data.
-Example:
-students = [{"id": 1, "name": "Tejas"}]
-def get_students():
-    for student in students:
-        yield student
-for s in get_students():
-    print(s)
+
+### Example:
+    students = [{"id": 1, "name": "Tejas"}]
+    def get_students():
+        for student in students:
+            yield student
+    for s in get_students():
+        print(s)
 
 ---
 
 ## Lambda:
 A lambda is an anonymous function in python used to write small, one-line functions without defining them using def. It can take any number of arguments but can have only one expression.
-Example:
-students = [{"id": 1, "name": "Tejas"}, {"id": 2, "name": "Rahul"}]
-search = list(filter(lambda s: "tejas" in s["name"].lower(), students))
-print(search)
+
+### Example:
+    students = [{"id": 1, "name": "Tejas"}, {"id": 2, "name": "Rahul"}]
+    search = list(filter(lambda s: "tejas" in s["name"].lower(), students))
+    print(search)
 
 ---
 
 ## Dict (Dictionary):
 A dictionary in Python is a collection of key-value pairs. It is unordered mutable, and does not allow duplicate keys. It is defined using curly braces {} with keys and values separated by a colon.
-Example:
-students = [] 
-def add_student(s_id, name):
-    students.append({"id": s_id, "name": name})
-add_student(1, "Tejas")
-print(students)
+
+### Example:
+    students = [] 
+    def add_student(s_id, name):
+        students.append({"id": s_id, "name": name})
+    add_student(1, "Tejas")
+    print(students)
 
 ---
 
