@@ -19,7 +19,7 @@ This masterclass strengthens your foundation in Python’s key features—Decora
 
 ## Section 1: Decorators
 
-### What Is It?
+### What Is Decorators?
 A decorator is a function in python that allows us to add extra functionality like logging, access control to another function without changing its original code. We can you this “@” symbol to apply a decorator to a function.
 
 ### Where to Use
@@ -47,7 +47,7 @@ def create():
 
 ## Section 2: Generators
 
-### What Is It?
+### What Is Generators?
 - A generator is a function in python that returns value one by one using the “yield” keyword instead of return.
 - Yield is pause and resume the activity
 - It doesn’t store all values in memory so its memory efficient and useful for large data.
@@ -76,7 +76,7 @@ for s in get_students():
 
 ## Section 3: Lambda Functions
 
-### What Is It?
+### What Is Lambda?
 A lambda is an anonymous function in python used to write small, one-line functions without defining them using def. It can take any number of arguments but can have only one expression.
 
 ### Where to Use
